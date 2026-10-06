@@ -10,3 +10,7 @@ Esto es un **parrafo**
 *Cursiva*
 **negreita**
 ***Negrita y cursiva ***
+## Bloques de codigo
+```
+pip install
+
