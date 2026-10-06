@@ -1,28 +1,33 @@
-#  Automatizacion QA - Saucedemo
+# Automatizacion QA - Saucedemo
 
-proyecto de automatizacion de pruebas realizado con python para el curso de Talento Tech.
+Proyecto de automatización de pruebas realizado con Python para el curso de **Talento Tech**.
 
-# Tecnologias usadas
+# Tecnologías usadas
 
 - Python
-- Selenum
+- Selenium
 - Pytest
 - Git
-- Github
+- GitHub
 
-## Instalacion
+## Instalación
 
-```python -m pip install selenium
+```bash
+python -m pip install selenium
 ```
-```python -m pip install pytest-html
+
+```bash
+python -m pip install pytest-html
 ```
 
 ## Ejecutar las pruebas
 
-```pytest -s
+```bash
+pytest -s
 ```
 
 ## Casos de prueba
+
 - Login exitoso
 - Agregar producto al carrito
 - Verificar producto al carrito
