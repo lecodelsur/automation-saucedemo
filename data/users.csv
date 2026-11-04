@@ -1,0 +1,4 @@
+usuario,password,tipo_usuario
+standard_user,secret_sauce,user_ok
+invalid_Test_user,1234,user_error
+sergio,123,user_error

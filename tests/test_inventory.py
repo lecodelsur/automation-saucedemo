@@ -1,45 +1,35 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import pytest
+from pages.login_page import LoginPage
+from pages.inventory_page import InventoryPage
+from utils.logger import logger
 
-def test_inventory():
-    driver = webdriver.Chrome()
-    
-    
+def test_inventory(driver):
     try:
-        #login
+        logger.info("Iniciando la prueba de inventario")
+        login_page = LoginPage(driver)
+        inventory_page = InventoryPage(driver)
+        logger.info("ingresando a la pagina web")
         driver.get("https://www.saucedemo.com/")
-        
-        usuario = driver.find_element(By.ID,"user-name")
-        password = driver.find_element(By.ID,"password")
-        boton_login = driver.find_element(By.ID,"login-button")
-        
-        usuario.send_keys("standard_user")
-        password.send_keys("secret_sauce")
-        boton_login.click()
-        
-        #verificar el titulo de la pagina
-        assert driver.title == "Swag Labs"
-        
-        productos = driver.find_elements(By.CLASS_NAME, "inventory_item")
+        logger.info("ingresando credenciales para iniciar sesion")
+    #Me logueo›
+        login_page.login("standard_user","secret_sauce")
+        logger.info("Sesion iniciada correctamente")
+    #ME fijo si hay productos en mi página
+        productos = inventory_page.obtener_productos()
+        logger.info("Productos de la pagina web capturados")
+    #Me fijo si la cantidad de productos es mayor que cero
         assert len(productos) > 0
-        
-        primer_producto = productos[0]
-        
-        nombre_producto = primer_producto.find_element(By.CLASS_NAME,"inventory_item_name").text
-        precio_producto = primer_producto.find_element(By.CLASS_NAME,"inventory_item_price").text
-        
-        
-        assert nombre_producto == "Sauce Labs Backpack"
-        assert precio_producto == "$29.99"
-        
-        #verificar menu amburguesa
-        menu = driver.find_element(By.ID,"react-burger-menu-btn")
-        #Esto valida si esta visible
-        assert menu.is_displayed()
-        
-        #verificar el filtro
-        filtro = driver.find_element(By.CLASS_NAME,"product_sort_container")
-        assert filtro.is_displayed()
-    finally:
-        driver.quit()
+        logger.info("Cantidad de productos mayor a cero")
+    #Me fijo que el nombre del primer producto sea el texto que me retornó obtener_nombre_primer_producto
+        assert inventory_page.obtener_nombre_primer_producto () == "Sauce Labs Backpack"
+        logger.info("Nombre del primer producto es correcto")
+    #Me fijo que el precio del primer producto sea el texto que me retornó obtener_precio_primer_producto
+        assert inventory_page.obtener_precio_primer_producto () == "$29.99"
+        logger.info("Precio del primer producto es correcto")
+    #Validar menu y filtro vicible (que devuelven verdadero o falso)
+        assert inventory_page.menu_visible()
+        logger.info("Menu visible")
+        assert inventory_page.filtro_visible()
+        logger.info("Filtro visible")
+    except Exception:
+        logger.exception("Error en la prueba de inventario", exc_info=True)
+        raise
