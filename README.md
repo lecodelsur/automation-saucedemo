@@ -68,25 +68,25 @@ Para ejecutar toda la suite de pruebas mostrando las salidas en consola:
 pytest -s
 ```
 
-Para ejecutar 煤nicamente las pruebas de API:
+Para ejecutar únicamente las pruebas de API:
 ```bash
 pytest tests/test_api.py -s
 ```
 
 ### 📊 Reportes y Evidencias
-Al finalizar la ejecuci贸n, se genera autom谩ticamente un reporte visual en la carpeta `reports/` junto con las capturas de pantalla correspondientes en `reports/screenshots/`.
+Al finalizar la ejecución, se genera automáticamente un reporte visual en la carpeta `reports/` junto con las capturas de pantalla correspondientes en `reports/screenshots/`.
 
 ---
 
 ## 🧪 Casos de Prueba Implementados
 
-* **Autenticaci贸n (`test_login.py`):** Validaci贸n de inicio de sesi贸n exitoso y manejo de credenciales.
-* **Inventario (`test_inventory.py`):** Exploraci贸n y selecci贸n de productos en el cat谩logo.
-* **Carrito de Compras (`test_cart.py`):** Agregado y verificaci贸n de art铆culos dentro del carrito.
-* **Pruebas de API (`test_api.py`):** Validaci贸n de c贸digos de estado HTTP, cabeceras, estructura JSON, datos de respuesta y tiempos de ejecuci贸n.
+* **Autenticaci贸n (`test_login.py`):** Validación de inicio de sesión exitoso y manejo de credenciales.
+* **Inventario (`test_inventory.py`):** Exploración y selección de productos en el catálogo.
+* **Carrito de Compras (`test_cart.py`):** Agregado y verificación de artículos dentro del carrito.
+* **Pruebas de API (`test_api.py`):** Validación de c贸digos de estado HTTP, cabeceras, estructura JSON, datos de respuesta y tiempos de ejecución.
 
 ---
 
 ## 👤 Autor
 
-Desarrollado por **Sergio E. S谩nchez Castillo** para el curso de **Talento Tech**.
+Desarrollado por **Sergio E. Sánchez Castillo** para el curso de **Talento Tech**.
