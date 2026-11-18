@@ -29,5 +29,5 @@ jobs:
       - name: Guardar reporte como artefacto
         uses: actions/upload-artifact@v4
         with:
-          name: reporte-pytest-html
-          path: reports/report.html
+            name: reporte-pruebas
+            path: reports/*.html
