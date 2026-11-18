@@ -1,0 +1,30 @@
+2026-11-04 13:31:49,085 INFO talento_tech - Iniciando la prueba del carrito
+2026-11-04 13:31:50,351 INFO talento_tech - Sesion iniciada correctamente
+2026-11-04 13:31:50,351 INFO talento_tech - Leyendo el primer producto del archivo JSON
+2026-11-04 13:31:50,352 INFO talento_tech - Producto leído: {'nombre': 'Sauce Labs Backpack', 'precio': 29.99}
+2026-11-04 13:31:50,593 INFO talento_tech - Producto agregado al carrito correctamente
+2026-11-04 13:31:50,665 INFO talento_tech - Navegando al carrito
+2026-11-04 13:31:50,707 INFO talento_tech - Nombre del producto en el carrito es correcto
+2026-11-04 13:31:50,733 INFO talento_tech - Precio del producto en el carrito es correcto
+2026-11-04 13:31:54,215 INFO talento_tech - Iniciando la prueba de inventario
+2026-11-04 13:31:54,215 INFO talento_tech - ingresando a la pagina web
+2026-11-04 13:31:54,764 INFO talento_tech - ingresando credenciales para iniciar sesion
+2026-11-04 13:31:55,219 INFO talento_tech - Sesion iniciada correctamente
+2026-11-04 13:31:55,312 INFO talento_tech - Productos de la pagina web capturados
+2026-11-04 13:31:55,312 INFO talento_tech - Cantidad de productos mayor a cero
+2026-11-04 13:31:55,350 INFO talento_tech - Nombre del primer producto es correcto
+2026-11-04 13:31:55,389 INFO talento_tech - Precio del primer producto es correcto
+2026-11-04 13:31:55,412 INFO talento_tech - Menu visible
+2026-11-04 13:31:55,432 INFO talento_tech - Filtro visible
+2026-11-04 13:31:58,884 INFO talento_tech - Ejecutando test_login con usuario: standard_user y tipo de usuario: user_ok
+2026-11-04 13:31:59,411 INFO talento_tech - Navegador abierto y página de login cargada
+2026-11-04 13:31:59,830 INFO talento_tech - Intentando login con usuario: standard_user y password: secret_sauce
+2026-11-04 13:31:59,916 INFO talento_tech - Login exitoso para usuario: standard_user
+2026-11-04 13:32:03,189 INFO talento_tech - Ejecutando test_login con usuario: invalid_Test_user y tipo de usuario: user_error
+2026-11-04 13:32:03,761 INFO talento_tech - Navegador abierto y página de login cargada
+2026-11-04 13:32:04,206 INFO talento_tech - Intentando login con usuario: invalid_Test_user y password: 1234
+2026-11-04 13:32:04,248 INFO talento_tech - Mensaje de error obtenido para usuario: invalid_Test_user
+2026-11-04 13:32:07,792 INFO talento_tech - Ejecutando test_login con usuario: sergio y tipo de usuario: user_error
+2026-11-04 13:32:08,256 INFO talento_tech - Navegador abierto y página de login cargada
+2026-11-04 13:32:08,662 INFO talento_tech - Intentando login con usuario: sergio y password: 123
+2026-11-04 13:32:08,704 INFO talento_tech - Mensaje de error obtenido para usuario: sergio

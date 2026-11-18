@@ -1,6 +1,9 @@
 # mi propio "x-api-key": "reqres_2dbd7eae6cda425eb2aefbda8c8a5a50"
 
 import requests
+import pytest_check as check
+
+
 
 def test_obtener_usuario():
     url = "https://reqres.in/api/users/2"
@@ -58,18 +61,35 @@ def test_crear_usuario():
 
     # NIVEL 3
     data = response.json()
-    assert "email" in data
-    assert "first_name" in data
-    assert "last_name" in data
-    assert "id" in data
+    check.is_in("email",data) #assert "email" in data
+    check.is_in("first_name",data) #assert "first_name" in data
+    check.is_in("last_name",data) #assert "last_name" in data
+    check.is_in("id",data) #assert "id" in dat
 
     # NIVEL 4
-    assert data["email"] == usuario["email"]
-    assert data["first_name"] == usuario["first_name"]
+    check.equal(data["email"],usuario["email"]) # assert data["email"] == usuario["email"]
+    check.equal(data["first_name"],usuario["first_name"]) # assert data["first_name"] == usuario["first_name"]
 
     # NIVEL 5: TIEMPO DE RESPUESTA
     assert response.elapsed.total_seconds() < 2
-
+    
+def test_eliminar_usuario(base_url,headers):
+    url = f"{base_url}/users/2"
+    
+    response = requests.delete(url,headers=headers)
+    
+    # NIVEL 1: STATUS CODE
+    assert response.status_code == 204
+    
+    # NIVEL 2: HEADERS
+    assert "Content-Type" not in response.headers
+    
+    # NIVEL 3 Y 4: ESTRUCTURA Y CONTENIDO
+    assert len(response.content) == 0
+    
+    # NIVEL 5: TIEMPO DE RESPUESTA
+    assert response.elapsed.total_seconds() < 2
+    
 """
 {
     "data":{
