@@ -1,0 +1,12 @@
+2026-11-18 13:11:50,078 INFO talento_tech - Ejecutando test_login con usuario: standard_user y tipo de usuario: user_ok
+2026-11-18 13:11:51,062 INFO talento_tech - Navegador abierto y página de login cargada
+2026-11-18 13:11:51,566 INFO talento_tech - Intentando login con usuario: standard_user y password: secret_sauce
+2026-11-18 13:11:51,662 INFO talento_tech - Login exitoso para usuario: standard_user
+2026-11-18 13:11:55,443 INFO talento_tech - Ejecutando test_login con usuario: invalid_Test_user y tipo de usuario: user_error
+2026-11-18 13:11:56,691 INFO talento_tech - Navegador abierto y página de login cargada
+2026-11-18 13:11:57,155 INFO talento_tech - Intentando login con usuario: invalid_Test_user y password: 1234
+2026-11-18 13:11:57,194 INFO talento_tech - Mensaje de error obtenido para usuario: invalid_Test_user
+2026-11-18 13:12:00,722 INFO talento_tech - Ejecutando test_login con usuario: sergio y tipo de usuario: user_error
+2026-11-18 13:12:02,392 INFO talento_tech - Navegador abierto y página de login cargada
+2026-11-18 13:12:02,789 INFO talento_tech - Intentando login con usuario: sergio y password: 123
+2026-11-18 13:12:02,830 INFO talento_tech - Mensaje de error obtenido para usuario: sergio

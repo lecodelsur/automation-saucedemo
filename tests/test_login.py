@@ -6,6 +6,7 @@ from utils.logger import logger
 
 # Asegurate de que figure exactamente así, con una coma separando los textos fijos
 #aca le digo que trabaje con data al lector de CSV
+@pytest.mark.flaky(reruns=2,reruns_delay=5)
 @pytest.mark.parametrize(
     "data",read_users_csv())
 

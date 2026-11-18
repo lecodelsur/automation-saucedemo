@@ -9,7 +9,9 @@ class LoginPage:
     def __init__(self,driver):
         self.driver = driver
         self.wait =  WebDriverWait(driver,10)     
-
+    def abrir_pagina(self):
+        self.driver.get("https://www.saucedemo.com/")
+        
     def ingresar_usuario(self,usuario):
         self.wait.until(EC.visibility_of_element_located((By.ID,"user-name"))).send_keys(usuario)
 
