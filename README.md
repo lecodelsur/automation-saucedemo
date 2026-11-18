@@ -1,23 +1,25 @@
-# 🧪 Automatizaci贸n QA - Saucedemo
 
-Proyecto de automatizaci贸n de pruebas End-to-End (E2E) y pruebas de API desarrollado con **Python** para el curso de **Talento Tech**. El framework est谩 estructurado bajo el patr贸n de dise帽o **Page Object Model (POM)**, integrando generaci贸n de reportes visuales, captura de evidencias y ejecuci贸n automatizada mediante **GitHub Actions**.
+# 🧪 Automatización QA - Saucedemo
+
+Proyecto de automatización de pruebas End-to-End (E2E) y pruebas de API desarrollado con **Python** para el curso de **Talento Tech**. El framework está estructurado bajo el patrón de diseño **Page Object Model (POM)**, integrando generación de reportes visuales, captura de evidencias y ejecución automatizada mediante **GitHub Actions**.
 
 ---
 
 ## 🛠️ Tecnologías y Herramientas
 
-* **Python 3.x** 鈥?Lenguaje principal de desarrollo.
-* **Selenium WebDriver** 鈥?Automatizaci贸n de interacciones en el navegador web.
-* **Pytest** 鈥?Framework de ejecuci贸n y gesti贸n de pruebas.
-* **Pytest-HTML** 鈥?Generaci贸n de reportes detallados en formato HTML.
-* **Pytest-Check** 鈥?Validaciones m煤ltiples (*soft assertions*) dentro de un mismo test.
-* **Requests** 鈥?Automatizaci贸n y validaci贸n de pruebas de API REST.
-* **Git & GitHub Actions** 鈥?Control de versiones e Integraci贸n Continua (CI).
+* **Python 3.x** – Lenguaje principal de desarrollo.
+* **Selenium WebDriver** – Automatización de interacciones en el navegador web.
+* **Pytest** – Framework de ejecución y gestión de pruebas.
+* **Pytest-HTML** – Generación de reportes detallados en formato HTML.
+* **Pytest-Check** – Validaciones múltiples (*soft assertions*) dentro de un mismo test.
+* **Requests** – Automatización y validación de pruebas de API REST.
+* **Git & GitHub Actions** – Control de versiones e Integración Continua (CI).
 
 ---
 
 ## 📁 Estructura del Proyecto
 
+```text
 ├── .github/workflows/   # Configuración de CI/CD en GitHub Actions (tests.yml)
 ├── data/                # Archivos de datos de prueba (CSV y JSON)
 ├── features/            # Escenarios y definiciones de pruebas
@@ -29,8 +31,6 @@ Proyecto de automatizaci贸n de pruebas End-to-End (E2E) y pruebas de API desarr
 ├── conftest.py          # Fixtures y configuraciones globales de Pytest
 ├── pytest.ini           # Configuración de ejecución de Pytest
 └── requirements.txt     # Dependencias del proyecto
-
-
 
 
 
