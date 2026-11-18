@@ -1,10 +1,10 @@
-# 馃И Automatizaci贸n QA - Saucedemo
+# 🧪 Automatizaci贸n QA - Saucedemo
 
 Proyecto de automatizaci贸n de pruebas End-to-End (E2E) y pruebas de API desarrollado con **Python** para el curso de **Talento Tech**. El framework est谩 estructurado bajo el patr贸n de dise帽o **Page Object Model (POM)**, integrando generaci贸n de reportes visuales, captura de evidencias y ejecuci贸n automatizada mediante **GitHub Actions**.
 
 ---
 
-## 馃洜锔?Tecnolog铆as y Herramientas
+## 🛠️ Tecnologías y Herramientas
 
 * **Python 3.x** 鈥?Lenguaje principal de desarrollo.
 * **Selenium WebDriver** 鈥?Automatizaci贸n de interacciones en el navegador web.
@@ -16,25 +16,25 @@ Proyecto de automatizaci贸n de pruebas End-to-End (E2E) y pruebas de API desarr
 
 ---
 
-## 馃搧 Estructura del Proyecto
+## 📁 Estructura del Proyecto
 
-```text
-鈹溾攢鈹€ .github/workflows/   # Configuraci贸n de CI/CD en GitHub Actions (tests.yml)
-鈹溾攢鈹€ data/                # Archivos de datos de prueba (CSV y JSON)
-鈹溾攢鈹€ features/            # Escenarios y definiciones de pruebas
-鈹溾攢鈹€ logs/                # Registros de ejecuci贸n del framework
-鈹溾攢鈹€ pages/               # Clases con el patr贸n Page Object Model (POM)
-鈹溾攢鈹€ reports/             # Reportes HTML generados y carpeta de screenshots
-鈹溾攢鈹€ tests/               # Scripts de pruebas automatizadas (UI y API)
-鈹溾攢鈹€ utils/               # Utilidades auxiliares (logger, lectores de archivos)
-鈹溾攢鈹€ conftest.py          # Fixtures y configuraciones globales de Pytest
-鈹溾攢鈹€ pytest.ini           # Configuraci贸n de ejecuci贸n de Pytest
-鈹斺攢鈹€ requirements.txt     # Dependencias del proyecto
-```
+├── .github/workflows/   # Configuración de CI/CD en GitHub Actions (tests.yml)
+├── data/                # Archivos de datos de prueba (CSV y JSON)
+├── features/            # Escenarios y definiciones de pruebas
+├── logs/                # Registros de ejecución del framework
+├── pages/               # Clases con el patrón Page Object Model (POM)
+├── reports/             # Reportes HTML generados y carpeta de screenshots
+├── tests/               # Scripts de pruebas automatizadas (UI y API)
+├── utils/               # Utilidades auxiliares (logger, lectores de archivos)
+├── conftest.py          # Fixtures y configuraciones globales de Pytest
+├── pytest.ini           # Configuración de ejecución de Pytest
+└── requirements.txt     # Dependencias del proyecto
 
----
 
-## 鈿欙笍 Instalaci贸n y Configuraci贸n
+
+
+
+## ⚙️ Instalación y Configuración
 
 1. **Clona el repositorio:**
    ```bash
@@ -61,7 +61,7 @@ Proyecto de automatizaci贸n de pruebas End-to-End (E2E) y pruebas de API desarr
 
 ---
 
-## 馃弮鈥嶁檪锔?Ejecuci贸n de las Pruebas
+## 🏃‍♂️ Ejecución de las Pruebas
 
 Para ejecutar toda la suite de pruebas mostrando las salidas en consola:
 ```bash
@@ -73,12 +73,12 @@ Para ejecutar 煤nicamente las pruebas de API:
 pytest tests/test_api.py -s
 ```
 
-### 馃搳 Reportes y Evidencias
+### 📊 Reportes y Evidencias
 Al finalizar la ejecuci贸n, se genera autom谩ticamente un reporte visual en la carpeta `reports/` junto con las capturas de pantalla correspondientes en `reports/screenshots/`.
 
 ---
 
-## 馃И Casos de Prueba Implementados
+## 🧪 Casos de Prueba Implementados
 
 * **Autenticaci贸n (`test_login.py`):** Validaci贸n de inicio de sesi贸n exitoso y manejo de credenciales.
 * **Inventario (`test_inventory.py`):** Exploraci贸n y selecci贸n de productos en el cat谩logo.
@@ -87,6 +87,6 @@ Al finalizar la ejecuci贸n, se genera autom谩ticamente un reporte visual en la
 
 ---
 
-## 馃懁 Autor
+## 👤 Autor
 
 Desarrollado por **Sergio E. S谩nchez Castillo** para el curso de **Talento Tech**.
